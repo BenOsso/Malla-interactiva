@@ -1,33 +1,58 @@
+
 body {
-  background: linear-gradient(to right, #ffe4e1, #ffb6c1);
   font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  background-color: #e0f7fa;
   margin: 0;
+  padding: 20px;
 }
 
-.container {
+h1 {
   text-align: center;
-  background-color: white;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  color: #00796b;
 }
 
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ff69b4;
-  color: white;
-  border: none;
+#malla {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.semestre {
+  background-color: #b2ebf2;
+  border: 2px solid #00796b;
+  padding: 15px;
   border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
-button:hover {
-  background-color: #ff1493;
+.semestre h2 {
+  color: #004d40;
+  margin-top: 0;
+}
+
+.ramo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.ramo input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.ramo span {
+  flex: 1;
+  color: #004d40;
+}
+
+.ramo.locked span {
+  color: #aaa;
+  text-decoration: line-through;
+}
+
+.ramo.locked input[type="checkbox"] {
+  display: none;
 }
